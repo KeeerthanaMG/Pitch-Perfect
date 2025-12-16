@@ -86,7 +86,7 @@ function App() {
       />
 
       {/* Main Stage */}
-      <main className="flex-grow relative overflow-hidden flex items-center justify-center">
+      <main className="flex-grow relative overflow-hidden flex items-center justify-center bg-slate-900">
 
         {/* Background Decorative Elements */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -95,8 +95,8 @@ function App() {
         {/* Slide Content with Transition */}
         <div
           className={`w-full max-w-7xl mx-auto transition-all duration-300 transform ${isTransitioning
-              ? 'opacity-0 translate-y-4 scale-95'
-              : 'opacity-100 translate-y-0 scale-100'
+            ? 'opacity-0 translate-y-4 scale-95'
+            : 'opacity-100 translate-y-0 scale-100'
             }`}
         >
           <Slide data={currentSlide} />

@@ -19,8 +19,8 @@ const Slide: React.FC<SlideProps> = ({ data }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row h-full w-full pt-20 pb-20 px-4 md:px-12 gap-8 items-center justify-center">
-      
+    <div className="flex flex-col md:flex-row h-full w-full pt-20 pb-20 px-4 md:px-12 gap-8 items-center justify-center bg-transparent">
+
       {/* Text Content */}
       <div className="flex-1 space-y-6 max-w-2xl animate-fade-in-up">
         <div className="flex items-center gap-4 mb-2">
@@ -29,11 +29,11 @@ const Slide: React.FC<SlideProps> = ({ data }) => {
             {data.type === 'intro' ? 'Start' : `Module ${data.moduleId}`}
           </span>
         </div>
-        
+
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white drop-shadow-lg">
           {data.title}
         </h1>
-        
+
         {data.subtitle && (
           <h2 className="text-xl md:text-2xl text-slate-300 font-light italic border-l-4 border-pink-500 pl-4">
             {data.subtitle}
@@ -42,8 +42,8 @@ const Slide: React.FC<SlideProps> = ({ data }) => {
 
         <div className="space-y-4 mt-8">
           {data.points.map((point, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
@@ -52,12 +52,12 @@ const Slide: React.FC<SlideProps> = ({ data }) => {
             </div>
           ))}
         </div>
-        
+
         {data.type === 'activity' && (
-             <div className="mt-8 p-4 bg-yellow-500/20 border border-yellow-500 rounded-lg flex items-center gap-3 animate-bounce-slow">
-                <AlertTriangle className="text-yellow-400 w-6 h-6" />
-                <span className="text-yellow-200 font-bold uppercase">Action Required: Team Interaction!</span>
-             </div>
+          <div className="mt-8 p-4 bg-yellow-500/20 border border-yellow-500 rounded-lg flex items-center gap-3 animate-bounce-slow">
+            <AlertTriangle className="text-yellow-400 w-6 h-6" />
+            <span className="text-yellow-200 font-bold uppercase">Action Required: Team Interaction!</span>
+          </div>
         )}
       </div>
 
