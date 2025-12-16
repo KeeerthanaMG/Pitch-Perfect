@@ -1,8 +1,5 @@
 import { SlideContent } from './types';
 
-// Suffix to ensure style consistency across all generated images
-const PHOTO_STYLE = "realistic photography, 4k, high quality, hackathon environment, students, professional";
-
 export const SLIDES: SlideContent[] = [
   // --- INTRO ---
   {
@@ -16,7 +13,7 @@ export const SLIDES: SlideContent[] = [
       "Goal: Turn your spaghetti code into a Michelin-star meal (metaphorically).",
       "No boring slides allowed. Let's go!"
     ],
-    imagePrompt: `university students presenting project at hackathon stage with microphone and screen, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
     imageCaption: "You, getting ready to pitch."
   },
 
@@ -33,7 +30,7 @@ export const SLIDES: SlideContent[] = [
       "Time Constraints: You have 2-4 minutes. Speedrun mode on.",
       "⚠️ Myth: Big Ideas > Execution. REALITY: Working Demo > World Peace Concept."
     ],
-    imagePrompt: `students running fast in a hallway, metaphor for speed, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&h=600&fit=crop",
     imageCaption: "It's a sprint, not a marathon."
   },
   {
@@ -47,7 +44,7 @@ export const SLIDES: SlideContent[] = [
       "Tech Feasibility: Is it a wrapper around ChatGPT, or did you engineer something?",
       "Impact: Does this help 5 people or 5 million?",
     ],
-    imagePrompt: `judges evaluating student project on a laptop at a hackathon desk, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
     imageCaption: "Judges when you have a plan."
   },
   {
@@ -59,7 +56,7 @@ export const SLIDES: SlideContent[] = [
       "❌ 'Business models don't matter' -> If it can't sustain, it dies.",
       "❌ 'More features = Better' -> No. One killer feature > 10 broken ones."
     ],
-    imagePrompt: `team collaborating at a whiteboard with sticky notes planning features, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?w=800&h=600&fit=crop",
     imageCaption: "Stop building login pages."
   },
 
@@ -74,7 +71,7 @@ export const SLIDES: SlideContent[] = [
       "Pain Intensity: Is it a 'Mosquito Bite' (Annoying) or a 'Shark Bite' (Urgent)?",
       "Focus: Narrow it down. 'Solving Hunger' is too big. 'Reducing Food Waste in Campus Cafeteria' is gold."
     ],
-    imagePrompt: `student interviewing a user with a notebook for research, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
     imageCaption: "Investigate the problem."
   },
   {
@@ -87,7 +84,7 @@ export const SLIDES: SlideContent[] = [
       "Behavior: What do they do? What frustrates them?",
       "Primary vs. Secondary: The student uses the app (Primary), the university pays for it (Secondary)."
     ],
-    imagePrompt: `diverse group of college students using mobile phones on campus, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=600&fit=crop",
     imageCaption: "Know your audience."
   },
   {
@@ -101,7 +98,7 @@ export const SLIDES: SlideContent[] = [
       "Validation Hacks: Run a survey in the Discord, ask other teams, google it fast.",
       "Assumptions are dangerous. Facts win prizes."
     ],
-    imagePrompt: `student pointing at a rising graph on a laptop screen with teammates, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     imageCaption: "Stonks only go up."
   },
 
@@ -116,7 +113,7 @@ export const SLIDES: SlideContent[] = [
       "Feature vs. Value: 'AI Chatbot' is a feature. 'Instant Mental Health Support' is value.",
       "Keep it simple enough for a 5-year-old to understand."
     ],
-    imagePrompt: `student looking at computer screen with a smile, lightbulb moment, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&h=600&fit=crop",
     imageCaption: "And then it hit me..."
   },
   {
@@ -129,7 +126,7 @@ export const SLIDES: SlideContent[] = [
       "Emotional Value: Feel safe 🛡️, Feel cool 😎, Belonging 🤝.",
       "Be specific. 'Saves time' is weak. 'Reduces process from 2 days to 2 minutes' is strong."
     ],
-    imagePrompt: `students high fiving each other at a desk after successful code run, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
     imageCaption: "Make them want it."
   },
   {
@@ -142,7 +139,7 @@ export const SLIDES: SlideContent[] = [
       "Differentiation: Are you faster? Cheaper? Easier? Private?",
       "Product-Market Fit (Hackathon Scale): Who needs this RIGHT NOW? If your server dies, will anyone cry?"
     ],
-    imagePrompt: `busy hackathon venue with many teams working side by side, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop",
     imageCaption: "Zoom past the legacy software."
   },
 
@@ -157,7 +154,7 @@ export const SLIDES: SlideContent[] = [
       "Feasibility: Could this actually exist in the real world?",
       "It doesn't need to make millions today, but it needs a path."
     ],
-    imagePrompt: `student writing business notes on a paper pad with coffee, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
     imageCaption: "I should buy a boat."
   },
   {
@@ -173,7 +170,7 @@ export const SLIDES: SlideContent[] = [
       "Commission (The 'Middleman' model)",
       "💡 Focus on the reasoning, not the exact numbers."
     ],
-    imagePrompt: `students discussing revenue models at a whiteboard, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=600&fit=crop",
     imageCaption: "Show me the monetization."
   },
   {
@@ -188,8 +185,8 @@ export const SLIDES: SlideContent[] = [
       "Revenue: How you make $.",
       "Cost Structure: Servers, API credits, Pizza."
     ],
-    imagePrompt: `hands drawing a business model canvas on a large sheet of paper, ${PHOTO_STYLE}`,
-    imageCaption: "It fits on a napkin."
+    imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+    imageCaption: "Large content in a sticky note."
   },
 
   // --- MODULE 5 ---
@@ -203,7 +200,7 @@ export const SLIDES: SlideContent[] = [
       "Time Limit: What can you build in 24h? MVP (Minimum Viable Product).",
       "Don't build a full login system with 2FA. Hardcode the user. We trust you."
     ],
-    imagePrompt: `close up of code on a laptop screen dark mode IDE, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
     imageCaption: "2 hours remaining..."
   },
   {
@@ -217,7 +214,7 @@ export const SLIDES: SlideContent[] = [
       "Architecture Diagram: Draw boxes and arrows. Judges love boxes and arrows.",
       "Explanation: Avoid jargon. 'We use a convolutional neural net' 😴 vs 'Our AI sees images like a human' 🤩."
     ],
-    imagePrompt: `complex software architecture diagram drawn on a whiteboard, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     imageCaption: "Look at all these wires (APIs)!"
   },
 
@@ -233,7 +230,7 @@ export const SLIDES: SlideContent[] = [
       "User Journey: Walk through a SPECIFIC scenario. 'Meet Bob. Bob is sad. Bob uses our app. Bob is happy.'",
       "Key Outcome: Show the value delivered."
     ],
-    imagePrompt: `student presenting a mobile app demo on a projector screen, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop",
     imageCaption: "Please don't crash."
   },
   {
@@ -246,7 +243,7 @@ export const SLIDES: SlideContent[] = [
       "🎥 PRE-RECORD A BACKUP. The WiFi *will* fail.",
       "🚑 Failure? Laugh it off. Explain what *should* have happened. Move on."
     ],
-    imagePrompt: `students frantically fixing bugs on laptops at a hackathon table, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
     imageCaption: "This is fine. The demo is fine."
   },
 
@@ -265,7 +262,7 @@ export const SLIDES: SlideContent[] = [
       "6. Business/Impact (The sustainability)",
       "7. Team (The rockstars)"
     ],
-    imagePrompt: `student telling a story with hand gestures during a presentation, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop",
     imageCaption: "Tell a story, don't read a list."
   },
   {
@@ -279,7 +276,7 @@ export const SLIDES: SlideContent[] = [
       "Time Management: Practice! If you get cut off before the demo, you lose.",
       "Don't speak at 2x speed. Speak clearly."
     ],
-    imagePrompt: `student designing a slide deck on a laptop with colorful graphics, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=600&fit=crop",
     imageCaption: "Time is relative, except in a pitch."
   },
 
@@ -295,7 +292,7 @@ export const SLIDES: SlideContent[] = [
       "Penalties: No demo? -50 points. Overclaiming? -1000 aura.",
       "Clarity is King. If they don't get it in 30s, they tune out."
     ],
-    imagePrompt: `judges sitting at a table listening intently to a pitch, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop",
     imageCaption: "It's a 'Yes' from me."
   },
   {
@@ -309,7 +306,7 @@ export const SLIDES: SlideContent[] = [
       "Q: 'Your UI is ugly.' A: 'It's an MVP focused on backend logic.' (Nice save).",
       "Be humble. If you don't know, say 'That's a great feature for V2!'"
     ],
-    imagePrompt: `student confidently answering questions from judges with a microphone, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
     imageCaption: "Parry, dodge, answer."
   },
 
@@ -327,7 +324,7 @@ export const SLIDES: SlideContent[] = [
       "✅ Do: Confident Delivery (Fake it 'til you make it)",
       "✅ Do: Strong Narrative (Emotional connection)"
     ],
-    imagePrompt: `tired students sleeping on their keyboards after a hackathon, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&h=600&fit=crop",
     imageCaption: "Nailed it."
   },
 
@@ -342,7 +339,7 @@ export const SLIDES: SlideContent[] = [
       "Format: 'My product [Name] helps [User] who wants to [Job] by [Solution].'",
       "GO! ⏱️"
     ],
-    imagePrompt: `students writing ideas on index cards during a workshop, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800&h=600&fit=crop",
     imageCaption: "Pencils down!"
   },
   {
@@ -355,7 +352,7 @@ export const SLIDES: SlideContent[] = [
       "Activity 3: Demo Storyboard (Draw the 3 key screens of your demo)",
       "You have 10 minutes. Discuss with your team."
     ],
-    imagePrompt: `team sketching app wireframes on paper on a table, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
     imageCaption: "Brainstorming intensity: 100%"
   },
   {
@@ -370,7 +367,7 @@ export const SLIDES: SlideContent[] = [
       "4. Sell the dream.",
       "Good luck at PEC Hacks! 🚀"
     ],
-    imagePrompt: `winning hackathon team holding a trophy and cheering, ${PHOTO_STYLE}`,
+    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
     imageCaption: "To the moon!"
   }
 ];

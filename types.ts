@@ -2,7 +2,7 @@ export interface SlideContent {
   title: string;
   subtitle?: string;
   points: string[];
-  imagePrompt: string; // Used to generate the AI image
+  imageUrl: string; // Direct URL to the image
   imageCaption?: string;
   type: 'intro' | 'content' | 'activity' | 'checklist' | 'quote';
   moduleId: number;

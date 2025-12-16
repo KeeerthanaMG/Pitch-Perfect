@@ -63,7 +63,7 @@ const Slide: React.FC<SlideProps> = ({ data }) => {
 
       {/* Visual Content */}
       <div className="flex-1 h-full flex items-center justify-center">
-        <MemeImage keyword={data.imagePrompt} caption={data.imageCaption} />
+        <MemeImage imageUrl={data.imageUrl} caption={data.imageCaption} />
       </div>
 
     </div>
